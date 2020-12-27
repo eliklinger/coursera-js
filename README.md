@@ -1,2 +1,2 @@
-# coursera-js
+# coursera-training
 Coursera Training Repository
