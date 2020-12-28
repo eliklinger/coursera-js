@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Coursera HTML and JS</title>
-</head>
-<body>
+ <head>
+  <title>Coursera HTML and JS</title>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript">
+	console.log(wellcomeMessage);
+  </script>
+ </head>
+ <body>
+	<h1>This is a Heading</h1>
+	<p>This is a paragraph 1</p>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+	<script type="text/javascript">
+	var a = "Global scope";
+	function changeScopeA(){
+		var a = "Scope A";
+		function changeScopeB(){
+			var a = "Scope B";
+			console.log(a);
+		}
+		console.log(a);
+		changeScopeB()
+	}
+	changeScopeA();
+	console.log(a);
+	</script>
 
-</body>
+  <script type="text/javascript">
+
+  </script>
+
+
+ </body>
 </html>
